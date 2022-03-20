@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.licenta_mobile.activity.main.parkingspots.ParkingSpotsViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="27dp" />
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[0].color}"
+                    android:onClick="@{() -> viewModel.reserve(0)}"
+                    android:text="A1" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="121dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[1].color}"
+                    android:onClick="@{() -> viewModel.reserve(1)}"
+                    android:text="A2" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="121dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[2].color}"
+                    android:onClick="@{() -> viewModel.reserve(2)}"
+                    android:text="A3" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="121dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[3].color}"
+                    android:onClick="@{() -> viewModel.reserve(3)}"
+                    android:text="A4" />
+
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="121dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[4].color}"
+                    android:onClick="@{() -> viewModel.reserve(4)}"
+                    android:text="A5" />
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="121dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[5].color}"
+                    android:onClick="@{() -> viewModel.reserve(5)}"
+                    android:text="A6" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[6].color}"
+                    android:onClick="@{() -> viewModel.reserve(6)}"
+                    android:text="B1" />
+
+                <Button
+                    android:id="@+id/button27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[7].color}"
+                    android:onClick="@{() -> viewModel.reserve(7)}"
+                    android:text="B2" />
+
+                <Button
+                    android:id="@+id/button28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[8].color}"
+                    android:onClick="@{() -> viewModel.reserve(8)}"
+                    android:text="B3" />
+
+                <Button
+                    android:id="@+id/button25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[9].color}"
+                    android:onClick="@{() -> viewModel.reserve(9)}"
+                    android:text="B4" />
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[10].color}"
+                    android:onClick="@{() -> viewModel.reserve(10)}"
+                    android:text="B5" />
+
+                <Button
+                    android:id="@+id/button29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[11].color}"
+                    android:onClick="@{() -> viewModel.reserve(11)}"
+                    android:text="B6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[12].color}"
+                    android:onClick="@{() -> viewModel.reserve(12)}"
+                    android:text="C1" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="113dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[13].color}"
+                    android:onClick="@{() -> viewModel.reserve(13)}"
+                    android:text="C2" />
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="113dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[14].color}"
+                    android:onClick="@{() -> viewModel.reserve(14)}"
+                    android:text="C3" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="113dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[15].color}"
+                    android:onClick="@{() -> viewModel.reserve(15)}"
+                    android:text="C4" />
+
+                <Button
+                    android:id="@+id/button34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="113dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[16].color}"
+                    android:onClick="@{() -> viewModel.reserve(16)}"
+                    android:text="C5" />
+
+                <Button
+                    android:id="@+id/button35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="113dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[17].color}"
+                    android:onClick="@{() -> viewModel.reserve(17)}"
+                    android:text="C6" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="63dp" />
+
+            <LinearLayout
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[18].color}"
+                    android:onClick="@{() -> viewModel.reserve(18)}"
+                    android:text="D1" />
+
+                <Button
+                    android:id="@+id/button39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="119dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[19].color}"
+                    android:onClick="@{() -> viewModel.reserve(19)}"
+                    android:text="D2" />
+
+                <Button
+                    android:id="@+id/button40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="119dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[20].color}"
+                    android:onClick="@{() -> viewModel.reserve(20)}"
+                    android:text="D3" />
+
+                <Button
+                    android:id="@+id/button41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="119dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[21].color}"
+                    android:onClick="@{() -> viewModel.reserve(21)}"
+                    android:text="D4" />
+
+                <Button
+                    android:id="@+id/button42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="119dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[22].color}"
+                    android:onClick="@{() -> viewModel.reserve(22)}"
+                    android:text="D5" />
+
+                <Button
+                    android:id="@+id/button43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="119dp"
+                    android:layout_weight="1"
+                    android:background="@{viewModel.spotsState[23].color}"
+                    android:onClick="@{() -> viewModel.reserve(23)}"
+                    android:text="D6" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

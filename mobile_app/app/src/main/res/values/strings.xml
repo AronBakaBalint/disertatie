@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cluj Parking</string>
+    <string name="pendingReservations">Pending Reservations</string>
+    <string name="reservationHistory">Reservation History</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_reservations">Reservations</string>
+    <string name="title_profile">Profile</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="confirm">Confirm</string>
+</resources>
